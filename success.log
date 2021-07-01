@@ -1,0 +1,194 @@
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:root:Got data
+INFO:django.channels.server:[mHTTP GET /api/admin/users/ 200 [0.04, 127.0.0.1:56645][0m
+INFO:root:m@gmail.com already exist
+WARNING:django.request:Bad Request: /api/register/
+WARNING:django.channels.server:[31;1mHTTP POST /api/register/ 400 [0.21, 127.0.0.1:56646][0m
+INFO:root:m@gmail.com already exist
+WARNING:django.request:Bad Request: /api/register/
+WARNING:django.channels.server:[31;1mHTTP POST /api/register/ 400 [0.20, 127.0.0.1:56646][0m
+INFO:root:mmm@gmail.com already exist
+WARNING:django.request:Bad Request: /api/register/
+WARNING:django.channels.server:[31;1mHTTP POST /api/register/ 400 [0.20, 127.0.0.1:56646][0m
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/tradeline/settings.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:root:mmm1@gmail.com already exist
+WARNING:django.request:Bad Request: /api/register/
+WARNING:django.channels.server:[31;1mHTTP POST /api/register/ 400 [0.20, 127.0.0.1:56648][0m
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/tradeline/settings.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:root:mmm1@gmail.com already exist
+WARNING:django.request:Bad Request: /api/register/
+WARNING:django.channels.server:[31;1mHTTP POST /api/register/ 400 [0.20, 127.0.0.1:56652][0m
+INFO:root:User saved successfully
+INFO:root:OTP sent successfully
+INFO:django.channels.server:[mHTTP POST /api/register/ 200 [3.58, 127.0.0.1:56652][0m
+INFO:root:Got data
+INFO:django.channels.server:[mHTTP GET /api/admin/users/ 200 [0.04, 127.0.0.1:56654][0m
+INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/mmm21@gmail.com/ [127.0.0.1:56655]
+ERROR:daphne.server:Exception inside application: No route found for path 'ws/chat/mmm21@gmail.com/'.
+Traceback (most recent call last):
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 254, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/auth.py", line 181, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'ws/chat/mmm21@gmail.com/'.
+INFO:django.channels.server:WebSocket DISCONNECT /ws/chat/mmm21@gmail.com/ [127.0.0.1:56655]
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/chatting/consumers.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/1/ [127.0.0.1:56664]
+INFO:django.channels.server:WebSocket CONNECT /ws/chat/1/ [127.0.0.1:56664]
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/chatting/consumers.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/c58800c7cc70e10576c9a4208f841980e88bbd36/ [127.0.0.1:56668]
+ERROR:daphne.server:Exception inside application: User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 254, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/auth.py", line 181, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/trade/chatting/consumers.py", line 20, in websocket_connect
+    me = await sync_to_async(User.objects.get)(auth_token=username)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/asgiref/sync.py", line 444, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/asgiref/sync.py", line 486, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+trade.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.channels.server:WebSocket DISCONNECT /ws/chat/c58800c7cc70e10576c9a4208f841980e88bbd36/ [127.0.0.1:56668]
+INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/c58800c7cc70e10576c9a4208f841980e88bbd36/ [127.0.0.1:56669]
+ERROR:daphne.server:Exception inside application: User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 254, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/auth.py", line 181, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/trade/chatting/consumers.py", line 20, in websocket_connect
+    me = await sync_to_async(User.objects.get)(auth_token=username)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/asgiref/sync.py", line 444, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/asgiref/sync.py", line 486, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+trade.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.channels.server:WebSocket DISCONNECT /ws/chat/c58800c7cc70e10576c9a4208f841980e88bbd36/ [127.0.0.1:56669]
+INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/c58800c7cc70e10576c9a4208f841980e88bbd36/ [127.0.0.1:56670]
+ERROR:daphne.server:Exception inside application: User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/sessions.py", line 254, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/auth.py", line 181, in __call__
+    return await super().__call__(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/routing.py", line 150, in __call__
+    return await application(
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/trade/chatting/consumers.py", line 20, in websocket_connect
+    me = await sync_to_async(User.objects.get)(auth_token=username)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/asgiref/sync.py", line 444, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 442, in wait_for
+    return await fut
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/asgiref/sync.py", line 486, in thread_handler
+    return func(*args, **kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/malikshahid/PycharmProjects/python-trade-line/venv/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+trade.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.channels.server:WebSocket DISCONNECT /ws/chat/c58800c7cc70e10576c9a4208f841980e88bbd36/ [127.0.0.1:56670]
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/chatting/consumers.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/1/ [127.0.0.1:56672]
+INFO:django.channels.server:WebSocket CONNECT /ws/chat/1/ [127.0.0.1:56672]
