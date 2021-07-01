@@ -1,0 +1,15 @@
+{
+   apps:
+      [{
+        name: "djnago_with_pm2___3",
+        script: "manage.py",
+        venv:"source venv/bin/activate",
+        args: ["runserver", "165.22.103.63:8000"],
+        exec_mode: "fork",
+        instances: "1",
+        wait_ready: true,
+        autorestart: false,
+        max_restarts: 5,
+        interpreter : "python3"
+      }]
+}
