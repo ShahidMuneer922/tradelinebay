@@ -192,3 +192,134 @@ INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
 INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
 INFO:django.channels.server:WebSocket HANDSHAKING /ws/chat/1/ [127.0.0.1:56672]
 INFO:django.channels.server:WebSocket CONNECT /ws/chat/1/ [127.0.0.1:56672]
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=127.0.0.1
+INFO:daphne.server:Listening on TCP address 127.0.0.1:8000
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=192.168.18.112
+INFO:daphne.server:Listening on TCP address 192.168.18.112:8000
+WARNING:django.request:Not Found: /
+WARNING:django.channels.server:[33mHTTP GET / 404 [0.04, 192.168.18.112:49578][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/user_detail/ 200 [0.02, 192.168.18.80:39294][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/pay/ 200 [0.02, 192.168.18.80:39296][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/order_card/ 200 [0.02, 192.168.18.80:39298][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/user_detail/ 200 [0.02, 192.168.18.80:39300][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/pay/ 200 [0.02, 192.168.18.80:39302][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/order_card/ 200 [0.02, 192.168.18.80:39304][0m
+INFO:root:Invalid Credentials
+WARNING:django.request:Bad Request: /api/login/
+WARNING:django.channels.server:[31;1mHTTP POST /api/login/ 400 [0.19, 192.168.18.80:39450][0m
+INFO:root:User Does Not Exist
+WARNING:django.request:Bad Request: /api/user_detail/
+WARNING:django.channels.server:[31;1mHTTP GET /api/user_detail/ 400 [0.01, 192.168.18.105:44556][0m
+INFO:root:946065e317d37e141eeac12bc53d3a0363d77d2e User Does not exist
+WARNING:django.request:Bad Request: /api/order_card/
+INFO:django.channels.server:[mHTTP GET /api/pay/ 200 [0.02, 192.168.18.105:44560][0m
+WARNING:django.channels.server:[31;1mHTTP GET /api/order_card/ 400 [0.02, 192.168.18.105:44558][0m
+WARNING:django.request:Not Found: /media/IMG-0038.apng
+WARNING:django.channels.server:[33mHTTP GET /media/IMG-0038.apng 404 [0.01, 192.168.18.105:44562][0m
+WARNING:django.request:Not Found: /media/IMG-0038.apng
+WARNING:django.channels.server:[33mHTTP GET /media/IMG-0038.apng 404 [0.01, 192.168.18.105:44562][0m
+INFO:root:User Does Not Exist
+INFO:root:946065e317d37e141eeac12bc53d3a0363d77d2e User Does not exist
+WARNING:django.request:Not Found: /media/IMG-0038.apng
+WARNING:django.request:Bad Request: /api/user_detail/
+WARNING:django.request:Bad Request: /api/order_card/
+INFO:root:User Does Not Exist
+INFO:root:946065e317d37e141eeac12bc53d3a0363d77d2e User Does not exist
+WARNING:django.request:Bad Request: /api/user_detail/
+WARNING:django.request:Bad Request: /api/order_card/
+INFO:django.channels.server:[mHTTP GET /api/pay/ 200 [0.03, 192.168.18.105:44602][0m
+WARNING:django.channels.server:[31;1mHTTP GET /api/user_detail/ 400 [0.03, 192.168.18.105:44600][0m
+WARNING:django.channels.server:[31;1mHTTP GET /api/order_card/ 400 [0.03, 192.168.18.105:44598][0m
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/tradeline/settings.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=192.168.18.112
+INFO:daphne.server:Listening on TCP address 192.168.18.112:8000
+INFO:root:Invalid Credentials
+WARNING:django.request:Bad Request: /api/login/
+WARNING:django.channels.server:[31;1mHTTP POST /api/login/ 400 [0.18, 192.168.18.80:40236][0m
+INFO:root:Invalid Credentials
+WARNING:django.request:Bad Request: /api/login/
+WARNING:django.channels.server:[31;1mHTTP POST /api/login/ 400 [0.17, 192.168.18.80:40236][0m
+INFO:root:User saved successfully
+INFO:root:OTP sent successfully
+INFO:django.channels.server:[mHTTP POST /api/register/ 200 [10.20, 192.168.18.105:44646][0m
+WARNING:django.request:Not Found: /api/admin/users
+WARNING:django.channels.server:[33mHTTP GET /api/admin/users 404 [0.02, 192.168.18.25:61807][0m
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.channels.server:[33mHTTP GET /favicon.ico 404 [0.01, 192.168.18.25:61807][0m
+INFO:root:Got data
+INFO:django.channels.server:[mHTTP GET /api/admin/users/ 200 [0.05, 192.168.18.25:61807][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/css/bootstrap.min.css 200 [0.02, 192.168.18.25:61807][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/css/bootstrap-tweaks.css 200 [0.02, 192.168.18.25:64939][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/css/prettify.css 200 [0.01, 192.168.18.25:59479][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/css/default.css 200 [0.01, 192.168.18.25:60997][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/js/jquery-3.5.1.min.js 200 [0.01, 192.168.18.25:50541][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/js/ajax-form.js 200 [0.00, 192.168.18.25:53225][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/js/csrf.js 200 [0.01, 192.168.18.25:64939][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/js/bootstrap.min.js 200 [0.01, 192.168.18.25:59479][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/js/prettify-min.js 200 [0.02, 192.168.18.25:60997][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/js/default.js 200 [0.01, 192.168.18.25:53225][0m
+INFO:django.channels.server:[mHTTP GET /static/rest_framework/img/grid.png 200 [0.01, 192.168.18.25:60997][0m
+INFO:root:Invalid Credentials
+WARNING:django.request:Bad Request: /api/login/
+WARNING:django.channels.server:[31;1mHTTP POST /api/login/ 400 [0.19, 192.168.18.80:40236][0m
+INFO:root:adilijaz.09@gmail.com Verified through OTP
+INFO:django.channels.server:[mHTTP POST /api/otp/ 200 [0.01, 192.168.18.105:44646][0m
+INFO:root:Invalid Credentials
+WARNING:django.request:Bad Request: /api/login/
+WARNING:django.channels.server:[31;1mHTTP POST /api/login/ 400 [0.20, 192.168.18.80:40236][0m
+INFO:root:User saved successfully
+INFO:root:OTP sent successfully
+INFO:django.channels.server:[mHTTP POST /api/register/ 200 [5.62, 192.168.18.80:40236][0m
+INFO:root:adilijaz.09@gmail.com Data Saved
+INFO:django.channels.server:[mHTTP POST /api/registration/ 200 [3.39, 192.168.18.105:44646][0m
+INFO:root:adilijaz.09@gmail.com is logged in
+INFO:django.channels.server:[mHTTP POST /api/login/ 200 [0.20, 192.168.18.105:44646][0m
+INFO:root:adilijaz.09@gmail.com got data
+INFO:django.channels.server:[mHTTP GET /api/user_detail/ 200 [0.02, 192.168.18.105:44646][0m
+INFO:django.channels.server:[mHTTP GET /api/pay/ 200 [0.03, 192.168.18.105:44742][0m
+INFO:django.channels.server:[mHTTP GET /api/order_card/ 200 [0.03, 192.168.18.105:44744][0m
+WARNING:django.request:Not Found: /media/IMG-0041.apng
+WARNING:django.channels.server:[33mHTTP GET /media/IMG-0041.apng 404 [0.01, 192.168.18.105:44748][0m
+WARNING:django.request:Not Found: /media/IMG-0041.apng
+WARNING:django.channels.server:[33mHTTP GET /media/IMG-0041.apng 404 [0.01, 192.168.18.105:44748][0m
+WARNING:django.request:Not Found: /media/IMG-0041.apng
+WARNING:django.channels.server:[33mHTTP GET /media/IMG-0041.apng 404 [0.01, 192.168.18.105:44748][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/otp/ 200 [0.00, 192.168.18.80:40236][0m
+INFO:root:aizaz9790@gmail.com Verified through OTP
+INFO:django.channels.server:[mHTTP POST /api/otp/ 200 [0.02, 192.168.18.80:40236][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/registration/ 200 [0.02, 192.168.18.80:40236][0m
+INFO:root:aizaz9790@gmail.com Data Saved
+INFO:django.channels.server:[mHTTP POST /api/registration/ 200 [0.48, 192.168.18.80:40236][0m
+WARNING:django.request:Not Found: /media/IMG-0041.apng
+WARNING:django.channels.server:[33mHTTP GET /media/IMG-0041.apng 404 [0.01, 192.168.18.105:44832][0m
+INFO:root:aizaz9790@gmail.com is logged in
+INFO:django.channels.server:[mHTTP POST /api/login/ 200 [0.20, 192.168.18.80:40236][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/user_detail/ 200 [0.00, 192.168.18.80:40236][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/pay/ 200 [0.01, 192.168.18.80:41614][0m
+INFO:django.channels.server:[mHTTP OPTIONS /api/order_card/ 200 [0.01, 192.168.18.80:40236][0m
+INFO:root:aizaz9790@gmail.com got data
+INFO:django.channels.server:[mHTTP GET /api/user_detail/ 200 [0.02, 192.168.18.80:41616][0m
+INFO:django.channels.server:[mHTTP GET /api/pay/ 200 [0.02, 192.168.18.80:41614][0m
+INFO:django.channels.server:[mHTTP GET /api/order_card/ 200 [0.02, 192.168.18.80:40236][0m
+INFO:django.utils.autoreload:/Users/malikshahid/PycharmProjects/python-trade-line/trade/tradeline/urls.py changed, reloading.
+INFO:daphne.server:HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO:daphne.server:Configuring endpoint tcp:port=8000:interface=192.168.18.112
+INFO:daphne.server:Listening on TCP address 192.168.18.112:8000
+INFO:root:adilijaz.09@gmail.com got data
+INFO:root:adilijaz.09@gmail.com got data
+WARNING:django.request:Not Found: /
+WARNING:django.channels.server:[33mHTTP GET / 404 [0.06, 192.168.18.105:44858][0m
+INFO:django.channels.server:[mHTTP GET /api/user_detail/ 200 [0.05, 192.168.18.105:44866][0m
+INFO:django.channels.server:[mHTTP GET /api/user_detail/ 200 [0.05, 192.168.18.105:44862][0m
+INFO:django.channels.server:[mHTTP GET /media/IMG-0041.apng 200 [0.05, 192.168.18.105:44868][0m
+INFO:django.channels.server:[mHTTP GET /api/pay/ 200 [0.06, 192.168.18.105:44860][0m
+INFO:django.channels.server:[mHTTP GET /api/order_card/ 200 [0.06, 192.168.18.105:44864][0m
+INFO:django.channels.server:[mHTTP PUT /api/update/ 200 [0.29, 192.168.18.105:44864][0m
+INFO:root:adilijaz.09@gmail.com got data
+INFO:django.channels.server:[mHTTP GET /api/pay/ 200 [0.03, 192.168.18.105:44864][0m
+INFO:django.channels.server:[mHTTP GET /api/user_detail/ 200 [0.03, 192.168.18.105:44866][0m
+INFO:django.channels.server:[mHTTP GET /api/order_card/ 200 [0.03, 192.168.18.105:44860][0m
+INFO:django.channels.server:[mHTTP GET /media/IMG-0036_pz7CCps.apng 200 [0.01, 192.168.18.105:44858][0m
