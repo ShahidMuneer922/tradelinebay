@@ -15,8 +15,8 @@ def previous_msg(request, pk, id):
         for i in data and dat:
             thread = str(i)
             da = thread.strip("{'thread':}")
-
-        user = list(Message.objects.filter(thread=da).values('text', "time", 'sender'))
+            s = da
+        user = list(Message.objects.filter(thread=s).values('text', "time", 'sender'))
         print(user)
 
         #     thread1 = i
