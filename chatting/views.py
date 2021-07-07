@@ -34,7 +34,7 @@ def previous_msg(request, pk, id):
 
     # print(data, dat)
 
-    return Response({'sender': user})
+    return Response({'data': user})
 
 
 

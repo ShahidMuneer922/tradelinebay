@@ -34,18 +34,17 @@ class ChatConsumer(AsyncConsumer):
         your_list=[]
         me = self.scope['url_route']['kwargs']['user']
         print(f'[{self.channel_name}] - Received message - {event["text"]}')
-        data = Message.objects.filter(thread=self.thread_obj).values('text', "time", 'sender')
-
-        for i in data:
-            # print(i)
-            my_list.append(i)
-            # print(my_list)
+        # data = list(Message.objects.filter(thread=self.thread_obj).values('text', "time", 'sender'))
+        #
+        # # for i in data:
+        # #     # print(i)
+        # #     my_list.append(i)
+        # print(data)
 
         msg = json.dumps(
             {
                 'type': event.get('text'),
                 'text': str(User.objects.get(id=me)),
-                "command":str(my_list)
             }
         )
         print(msg)

@@ -1,21 +1,20 @@
 import logging
 from rest_framework.decorators import api_view
-from .models import Post_Card, F_password
+from .models import Post_Card
 from rest_framework.response import Response
 from django.http import JsonResponse
 
 
-
 @api_view(['POST'])
-def Verification_card(request, pk):
+def verification_card(request, pk):
     logging.basicConfig(filename='success.log', level=logging.INFO, datefmt='%m/%d/%Y %I:%M:%S %p')
     try:
         user = Post_Card.objects.get(pk=pk)
         print(Post_Card.objects.all())
-        use=Post_Card.objects.all()
+        use = Post_Card.objects.all()
 
     except Exception as e:
-        message=str(e)
+        message = str(e)
         logging.info(f' Does not Exist')
         return JsonResponse({'message': message}, status=400)
 
@@ -31,10 +30,6 @@ def Verification_card(request, pk):
             return JsonResponse({"Message": False}, status=400)
 
 
-
-
-
-
 @api_view(['GET'])
 def special_card_confirm_view(request):
     logging.basicConfig(filename='success.log', level=logging.INFO)
@@ -43,11 +38,10 @@ def special_card_confirm_view(request):
     try:
         user = Post_Card.objects.filter(special_card=a)
     except Exception as e:
-        message=str(e)
+        message = str(e)
         logging.error(f'{a} User Does not exist')
         return JsonResponse({"Success": False,
                              'Error': message}, status=400)
-
 
     if request.method == 'GET':
         data = user.values()
