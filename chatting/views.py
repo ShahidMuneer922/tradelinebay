@@ -12,7 +12,6 @@ def intersection(data, dat):
 @api_view(['GET'])
 def previous_msg(request, pk, id):
     try:
-        global da
         data = list(Message.objects.filter(sender=pk).values('thread'))
         dat = list(Message.objects.filter(sender=id).values('thread'))
         for i in intersection(data, dat):
