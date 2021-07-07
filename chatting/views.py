@@ -12,7 +12,7 @@ def intersection(data, dat):
 @api_view(['GET'])
 def previous_msg(request, pk, id):
     try:
-        user = 'dsa'
+        global user
         data = list(Message.objects.filter(sender=pk).values('thread'))
         dat = list(Message.objects.filter(sender=id).values('thread'))
         for i in intersection(data, dat):
@@ -20,7 +20,7 @@ def previous_msg(request, pk, id):
             da = thread.strip("{'thread':}")
             print(da)
 
-            user = list(Message.objects.filter(thread=da).values('text', "time", 'sender'))
+        user = list(Message.objects.filter(thread=da).values('text', "time", 'sender'))
         print(user)
 
         return Response({'data': user})
