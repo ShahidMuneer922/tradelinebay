@@ -40,11 +40,13 @@ class ChatConsumer(AsyncConsumer):
         # #     # print(i)
         # #     my_list.append(i)
         # print(data)
-
+        user = User.objects.get(id=me)
+        print(user.id)
         msg = json.dumps(
             {
                 'type': event.get('text'),
                 'text': str(User.objects.get(id=me)),
+                "sender": str(user.id),
             }
         )
         print(msg)

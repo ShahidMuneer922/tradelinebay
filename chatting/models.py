@@ -35,6 +35,6 @@ class Message(TrackingModel):
 
     def __str__(self) -> str:
         return f'From <Thread - {self.thread}>'
-    #
-    # def last_30_messages(self):
-    #     return Message.objects.order_by('-timestamp').all()[:30]
+
+    def last_10_messages(self):
+        return Message.objects.order_by('-timestamp').all()[:30]
