@@ -458,7 +458,7 @@ def in_card_view(request, pk):
             DOB=data.DOB
 
         return JsonResponse({'name':name, 'address':address, 'phone':phone, 'DOB':DOB,
-                             'card_no':card_no, 'card_expiry':card_expiry,'card_price':sell_price ,'email':email,'card_id':id}, status=200)
+                             'card_no':card_no, 'card_expiry':card_expiry,'card_price':sell_price ,'email':email,'card_id':id, 'user':a}, status=200)
 
 
 

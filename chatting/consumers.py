@@ -1,4 +1,5 @@
 from channels.consumer import AsyncConsumer
+from channels.generic.websocket import AsyncWebsocketConsumer
 from asgiref.sync import sync_to_async
 from .models import Thread, Message
 from trade.models import User
@@ -6,6 +7,7 @@ import json
 from channels.db import database_sync_to_async
 
 class ChatConsumer(AsyncConsumer):
+
     async def websocket_connect(self, event):
             me = self.scope['url_route']['kwargs']['user']
             print(me)
@@ -21,20 +23,32 @@ class ChatConsumer(AsyncConsumer):
             await self.channel_layer.group_add(self.room_name, self.channel_name)
             await self.send({
                 'type': 'websocket.accept',
+
             })
+
             print(f'[{self.channel_name}] - you are connected')
 
 
     async def websocket_receive(self, event):
-        print(f'[{self.channel_name}] - Received message - {event["text"]}')
+        my_list=[]
+        your_list=[]
         me = self.scope['url_route']['kwargs']['user']
+        print(f'[{self.channel_name}] - Received message - {event["text"]}')
+        data = Message.objects.filter(thread=self.thread_obj).values('text', "time", 'sender')
+
+        for i in data:
+            # print(i)
+            my_list.append(i)
+            # print(my_list)
 
         msg = json.dumps(
             {
                 'type': event.get('text'),
-                'text': str(User.objects.get(id=me)), }
+                'text': str(User.objects.get(id=me)),
+                "command":str(my_list)
+            }
         )
-        # print(msg)
+        print(msg)
         print(event.get('text'))
         await self.store_message(event.get('text'))
 
@@ -43,6 +57,8 @@ class ChatConsumer(AsyncConsumer):
             {
                 'type': 'websocket.message',
                 'text': msg,
+                # 'command': my_list
+
             }
         )
         print(self.room_name)

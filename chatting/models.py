@@ -31,6 +31,10 @@ class Message(TrackingModel):
     thread = models.ForeignKey(Thread, on_delete=models.CASCADE)
     sender = models.ForeignKey(User, on_delete=models.CASCADE)
     text = models.TextField(blank=False, null=False)
+    time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> str:
         return f'From <Thread - {self.thread}>'
+    #
+    # def last_30_messages(self):
+    #     return Message.objects.order_by('-timestamp').all()[:30]
