@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/confirm_card_post/<pk>', admin_views.confirm_card_post),
     path('admin/post_card_view/', admin_views.post_card_view),
     path('in_card_view/<pk>/', views.in_card_view),
-    path('in_seller_view/<pk>/', views.in_seller_view),
+    path('in_seller_view/<pk>', views.in_seller_view),
     path('in_seller_dash/', views.in_seller_dash),  # THROUGH HEADERS
     path('all_sellers/', views.all_sellers),
     path('card_dashboard_view/', confirm_card_views.card_dashboard_view),
