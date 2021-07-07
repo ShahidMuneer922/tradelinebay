@@ -20,7 +20,7 @@ def previous_msg(request, pk, id):
             da = thread.strip("{'thread':}")
             print(da)
 
-        user = list(Message.objects.filter(thread=da).values('text', "time", 'sender'))
+            user = list(Message.objects.filter(thread=da).values('text', "time", 'sender'))
         print(user)
 
         return Response({'data': user})
