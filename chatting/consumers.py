@@ -47,7 +47,7 @@ class ChatConsumer(AsyncConsumer):
                 'type': event.get('text'),
                 'text': str(User.objects.get(id=me)),
                 "sender": str(user.id),
-                'success': True
+                'success': True,
 
             }
         )
