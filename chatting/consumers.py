@@ -47,6 +47,8 @@ class ChatConsumer(AsyncConsumer):
                 'type': event.get('text'),
                 'text': str(User.objects.get(id=me)),
                 "sender": str(user.id),
+                'success': True
+
             }
         )
         print(msg)
@@ -58,7 +60,6 @@ class ChatConsumer(AsyncConsumer):
             {
                 'type': 'websocket.message',
                 'text': msg,
-                # 'command': my_list
 
             }
         )
