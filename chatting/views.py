@@ -78,12 +78,10 @@ def disappear_messages(request):
     for use in user:
         print(use.disappear_message)
         if use.disappear_message == True:
-
-            a = Message.objects.filter(disappear_message_start_time__lte=datetime.now() - timedelta(seconds=10))
+            a = list(Message.objects.filter(disappear_message_start_time__lte=datetime.now() - timedelta(seconds=10)))
             for b in a:
                 print(b)
                 b.delete()
-
     return JsonResponse({"success": True}, status=200)
 
 
