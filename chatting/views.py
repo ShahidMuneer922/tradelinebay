@@ -20,6 +20,12 @@ def previous_msg(request, pk, id):
     try:
         data = list(Message.objects.filter(sender=pk).values('thread'))
         dat = list(Message.objects.filter(sender=id).values('thread'))
+        print(data)
+        print(dat)
+        if data == []:
+            if dat == []:
+                return Response({'success': True,
+                                 'message': 'No Messages To show'})
         print(intersection(data, dat))
         if intersection(data, dat) == []:
             for i in dat:
